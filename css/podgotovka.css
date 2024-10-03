@@ -1,0 +1,108 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto; 
+}
+
+body {
+    position: relative;
+}
+
+body::before {
+    content: ""; 
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/redTruck.png'); 
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+    background-size:contain; 
+    opacity: 0.7; 
+    z-index: -1; 
+    pointer-events: none; 
+}
+.header {
+    width: 100%; 
+    display: flex;
+    color: white; 
+    padding: 0.5%; 
+    justify-content: space-between;
+    align-items: center; 
+    box-sizing: border-box;
+    position: relative; 
+    z-index: 10; 
+}
+
+.header img {
+    max-width: 10%; 
+    height: auto;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav li {
+    margin: 0 5px; 
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 1em;
+}
+.vverh {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    text-align: center; 
+    color: white; 
+}
+
+.vverh > div {
+    margin: 5px 0; 
+}
+
+.vverh p {
+    color: white; 
+    font-size: 1.2em; 
+}
+
+
+.right{
+    width: 800px;
+    height: 200px;
+    background-color: #ffffff;
+    
+    clip-path: polygon(50% 0, 100% 0, 100% 100%, 0% 100%);
+}
+.left{
+    width: 800px;
+    height: 200px;
+    background-color: #ffffff;
+    clip-path: polygon(0 0, 50% 0, 100% 100%, 0% 100%);
+
+}
+.vvv {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+.hhh{
+    text-align: center;
+    color: #ffffff;
+    font-size: large;
+    display: flex;
+    justify-content: space-between;
+}
+
+qwe{
+    margin-top: 100%;
+}

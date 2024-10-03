@@ -1,0 +1,132 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.uslugi {
+    text-align: center; 
+    margin-bottom: 20px; 
+}
+
+.uslugi p:first-child {
+    font-size: 24px; 
+    font-weight: bold;
+    margin-bottom: 30px; 
+}
+
+.uslugi > div {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: flex-start;
+    gap: 20px; 
+}
+
+.uslugi .card {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center; 
+    position: relative;
+    max-width: 200px; 
+}
+
+.uslugi .card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%; 
+    display: block; 
+    z-index: 1; 
+}
+
+.uslugi .card::after {
+    content: "";
+    position: absolute;
+    top: calc(62% ); 
+    left: 50%;
+    transform: translateX(-50%); 
+    width:90px; 
+    height: 15px; 
+    background: rgba(0, 0, 0, 0.1); 
+    border-radius: 50%; 
+    z-index: 0;
+}
+
+.uslugi .card p {
+    margin-top: 40px;
+    z-index: 1; 
+}
+
+
+
+
+.prod {
+    text-align: center; 
+    margin-bottom: 20px; 
+}
+
+.prod p:first-child {
+    font-size: 24px; 
+    font-weight: bold;
+    margin-bottom: 30px; 
+}
+
+.prod > div {
+    display: flex; 
+    justify-content: center;
+    align-items: stretch; 
+    gap: 2%; 
+}
+
+.prod .bcard {
+    display: flex;
+    flex-direction: column; 
+    text-align: center; 
+    padding: 0; 
+    box-sizing: border-box; 
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); 
+    border-radius: 8px; 
+    background-color: #fff;
+    overflow: hidden; 
+    max-width: 33%; 
+    flex: 0 1 auto; 
+}
+
+.prod .bcard img {
+    width: 100%; 
+    height: auto; 
+    display: block; 
+}
+
+.prod .bcard .content {
+    padding: 10px; 
+}
+
+
+.predl {
+    text-align: center; 
+    margin-bottom: 20px; 
+}
+
+.predl p:first-child {
+    font-size: 24px; 
+    font-weight: bold; 
+    margin-bottom: 30px; 
+}
+
+.predl > div {
+    background-color: rgba(0, 0, 0, 0.6); 
+    padding: 20px; 
+    border-radius: 25px; 
+    color: white;
+    font-size: 16px; 
+    line-height: 1.5; 
+    text-align: left; 
+    width: 80%; 
+    margin: 0 auto; 
+}
+
+footer{
+    background-color: black;
+    width: auto;
+    height: 10%;
+}

@@ -1,0 +1,71 @@
+.main {
+    color: white;
+    margin-top: 10%;
+    display: flex;
+    justify-content: space-between; 
+}
+
+.left {
+    width: 50%; 
+    display: flex;
+    flex-direction: column;
+}
+
+.right {
+    width: 50%; 
+    display: flex;
+    flex-direction: column;
+}
+
+.block {
+    background-color: #2276B8;
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-start; 
+    border-radius: 0 10px 10px 0;
+}
+
+.sinTR{
+    width: 935px;
+    height: 230px;
+    background: linear-gradient(to bottom left,#114268,#175B91);
+    clip-path: polygon(0 0, 100% 0%, 0 100%, 0% 100%);
+}
+
+.foto {
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-start; 
+    position: relative; 
+    top: -220px;
+    left: 25%; 
+}
+
+.fotka { 
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-start; 
+    position: relative; 
+}
+.fotka img {
+    margin-left: 120px;
+}
+.malBlock {
+    background-color: #2276B8;
+    display: flex;
+    height: 200px;
+    flex-direction: column; 
+    border-radius: 10px 0 0 10px ;
+    
+}
+
+.TRsin{
+    width: 935px;
+    height: 230px;
+    flex-direction: column;
+    border-radius: 10px 0 0 10px;
+    margin-top: -200px;
+    z-index: -1;
+    background: linear-gradient(to bottom left ,#175B91,#114268);
+    clip-path: polygon(100% 0, 100% 0%, 100% 100%, 0% 100%);
+}
