@@ -34,6 +34,7 @@ body::after {
     width: 100%;
     height: 100%;
     background-color: rgba(24, 24, 24, 0.5); /* Полупрозрачный цвет */
+    
     z-index: -1; /* Цветной слой между изображением и содержимым страницы */
     pointer-events: none;
 }
@@ -49,8 +50,7 @@ header {
     display: flex;
     align-items: center;
     width: 100%;
-    font-size: 3rem;
-     
+    
 }
 
 .izob {
@@ -88,10 +88,9 @@ ul li a {
     width: 100%;
     height: 15%;
     display: grid;
-    grid-template-columns: 35% 30% 35%; 
+    grid-template-columns: 30% 40% 30%; 
 }
 .left, .center, .right{
-    
     display: flex;
     align-items: center;
     width: 100%;
@@ -118,7 +117,6 @@ ul li a {
     background-color: white;
 }
 footer {
-    margin-top: 20%;
     display: grid;
     grid-template-columns: 50% 50%; 
     color: #7D7D7D;
@@ -144,76 +142,4 @@ footer {
 #nomer {
     font-size: 2rem;
     color: #E0E0E0; 
-}
-
-
-
-.razdel{
-    padding-top: 5%;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 50% 50%; 
-}
-.levaya{
-    display: flex;
-    flex-direction: column;
-    justify-content: center; 
-}
-.pravaya {
-    display: flex;
-    margin-top: -10%; /* Отрицательный отступ для корректировки положения */
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    position: relative; /* Для использования псевдоэлемента */
-}
-
-.pravaya img {
-    padding-left: 10%;
-    width: 60%; /* Уменьшен размер изображения */
-    margin-right: 5%;
-    position: relative;
-    border-radius: 15px 15px 15px 15px;
-    z-index: 2; /* Изображение выше тени */
-}
-
-/* Псевдоэлемент ::after для создания тени */
-.pravaya::after {
-    content: '';
-    position: absolute;
-    filter: blur(10px);
-    bottom: 106px; /* Позиционирование тени чуть ниже изображения */
-    left: 37%; /* Положение тени по горизонтали */
-    width: 60%; /* Ширина тени */
-    height: 120px; /* Увеличенная высота тени для более мягкого эффекта */
-    background-color: rgba(0, 0, 0, 0.2); /* Сделаем тень еще более прозрачной */
-    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%); /* Треугольная форма тени */
-    filter: blur(20px); /* Увеличиваем размытие тени */
-    z-index: 1; /* Тень под изображением */
-}
-
-
-
-.sinBlock{
-    white-space: pre-wrap;
-    font-size: 24px; /* Увеличиваем размер текста */
-    text-align: left; /* Текст будет начинаться слева */
-    height: 700px;
-    border-radius: 0 10px 10px 0;
-    background-color: #2276B8;
-    color: #ffffff;
-    
-    /* Центрирование блока */
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* Центрируем содержимое по вертикали */
-    align-items: center; 
-}
-.sinTR{
-
-    width: 99%;
-    height: 250px;
-   
-    background: linear-gradient(to bottom left,#175B91, #114268);
-    clip-path: polygon(0 0, 100% 0%, 0 100%, 0% 100%);
 }

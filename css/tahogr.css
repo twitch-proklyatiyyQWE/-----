@@ -41,6 +41,7 @@ header {
     width: 100%;
     display: grid;
     grid-template-columns: 30% 40% 30%; 
+   
     /* Равномерное распределение на три колонки */
 }
 
@@ -49,8 +50,7 @@ header {
     display: flex;
     align-items: center;
     width: 100%;
-    font-size: 3rem;
-     
+    
 }
 
 .izob {
@@ -152,68 +152,53 @@ footer {
     padding-top: 5%;
     width: 100%;
     display: grid;
-    grid-template-columns: 50% 50%; 
 }
 .levaya{
     display: flex;
     flex-direction: column;
     justify-content: center; 
 }
-.pravaya {
-    display: flex;
-    margin-top: -10%; /* Отрицательный отступ для корректировки положения */
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    position: relative; /* Для использования псевдоэлемента */
-}
-
-.pravaya img {
-    padding-left: 10%;
-    width: 60%; /* Уменьшен размер изображения */
-    margin-right: 5%;
-    position: relative;
-    border-radius: 15px 15px 15px 15px;
-    z-index: 2; /* Изображение выше тени */
-}
-
-/* Псевдоэлемент ::after для создания тени */
-.pravaya::after {
-    content: '';
-    position: absolute;
-    filter: blur(10px);
-    bottom: 106px; /* Позиционирование тени чуть ниже изображения */
-    left: 37%; /* Положение тени по горизонтали */
-    width: 60%; /* Ширина тени */
-    height: 120px; /* Увеличенная высота тени для более мягкого эффекта */
-    background-color: rgba(0, 0, 0, 0.2); /* Сделаем тень еще более прозрачной */
-    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%); /* Треугольная форма тени */
-    filter: blur(20px); /* Увеличиваем размытие тени */
-    z-index: 1; /* Тень под изображением */
-}
 
 
 
-.sinBlock{
+
+.sinBlock {
     white-space: pre-wrap;
-    font-size: 24px; /* Увеличиваем размер текста */
+    font-size: 2rem; /* Увеличиваем размер текста */
     text-align: left; /* Текст будет начинаться слева */
-    height: 700px;
+    height: 40%;
+    width: 95%;
     border-radius: 0 10px 10px 0;
     background-color: #2276B8;
     color: #ffffff;
     
-    /* Центрирование блока */
     display: flex;
     flex-direction: column;
     justify-content: center; /* Центрируем содержимое по вертикали */
     align-items: center; 
+    
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
-.sinTR{
 
-    width: 99%;
-    height: 250px;
-   
-    background: linear-gradient(to bottom left,#175B91, #114268);
+.sinTR {
+    width: 94%;
+    height: 400px;
+    background: linear-gradient(to bottom left, #175B91, #114268);
     clip-path: polygon(0 0, 100% 0%, 0 100%, 0% 100%);
+    position: relative;
+}
+
+.fotokarti {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10%;
+    margin-right: 10%;
+    position: relative;
+    top: -1%;
+    gap: 10%; /* Добавляем отступ между изображениями */
+}
+
+.fotokarti img {
+    width: 85%;
+    margin-top: -10%;
 }

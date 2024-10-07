@@ -1,0 +1,322 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto; 
+}
+
+body {
+    position: relative;
+}
+
+body::before {
+    content: ""; 
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/redTruck.png'); 
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+    background-size:100% 35%; 
+    opacity: 0.7; 
+    filter: blur(10px);
+    z-index: -1; 
+    pointer-events: none; 
+}
+body::after {
+    content: ""; 
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(24, 24, 24, 0.5); /* Полупрозрачный цвет */
+    
+    z-index: -1; /* Цветной слой между изображением и содержимым страницы */
+    pointer-events: none;
+}
+header {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 30% 40% 30%; 
+    /* Равномерное распределение на три колонки */
+}
+
+/* Все три элемента в сетке: логотип, навигация и телефоны */
+.izob, .nnn, .nom {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    
+}
+
+.izob {
+    justify-content: flex-start; /* Логотип слева */
+}
+
+.nnn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    font-size: 20px;
+     /* Навигация по центру */
+}
+
+.nom {
+    margin-right: 20%;
+    font-size: 20px;
+    color: white;
+    justify-content: flex-end; /* Номера телефонов справа */
+}
+
+ul {
+   
+    list-style: none;
+    display: flex;
+    gap: 20px; /* Добавить расстояние между элементами меню */
+}
+
+ul li a {
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}
+.sad{
+    width: 100%;
+    height: 15%;
+    display: grid;
+    grid-template-columns: 30% 40% 30%; 
+}
+.left, .center, .right{
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+}
+.left{
+    background-color: #ffffff;
+    clip-path: polygon(0 0, 75% 0, 100% 100%, 0% 100%);
+}
+.center{
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    justify-content: center;
+}
+.right{
+    background-color: #ffffff;
+    clip-path: polygon(25% 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.realFone{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+footer {
+    margin-top: 110%;
+    display: grid;
+    grid-template-columns: 50% 50%; 
+    color: #7D7D7D;
+    background-color: #2B2B2B;
+   
+}
+.levo{
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Центрирование по горизонтали */
+    justify-content: center; 
+}
+.levo img{
+    width: 15%;
+}
+.pravo{
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Центрирование по горизонтали */
+    justify-content: center; 
+
+}
+#nomer {
+    font-size: 2rem;
+    color: #E0E0E0; 
+}
+.razdelili{
+    display: grid;
+    grid-template-columns: 50% 50%; 
+}
+.pravChast{
+    margin-top: 10%;
+}
+
+.sinBlock{
+    white-space: pre-wrap;
+    font-size: 40px; /* Увеличиваем размер текста */
+    text-align: left; /* Текст будет начинаться слева */
+    height: 10%;
+    
+    width: 60%;
+    border-radius: 0 10px 10px 0;
+    background-color: #2276B8;
+    color: #ffffff;
+    
+    /* Центрирование блока */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Центрируем содержимое по вертикали */
+    align-items: center; 
+}
+.sinTR{
+
+    width: 59%;
+    height: 100px;
+   
+    background: linear-gradient(to bottom left,#175B91, #114268);
+    clip-path: polygon(0 0, 100% 0%, 0 100%, 0% 100%);
+}
+.textiblock{
+    font-size: 1.8rem;
+    margin-top: 5%;
+    display: grid;
+    grid-template-columns: 20% 80%; 
+}
+.green{
+    
+    background-color: #A1C64D;
+    border-radius: 0 10px 10px 0;
+    height: 200px;
+}
+.tex{
+    margin-left: 7%;
+}
+.sinBlock2{
+    margin-top: 10%;
+    white-space: pre-wrap;
+    font-size: 1.5rem; /* Увеличиваем размер текста */
+    text-align: left; /* Текст будет начинаться слева */
+    height: 35%;
+    border-radius: 0 10px 10px 0;
+    background-color: #2276B8;
+    color: #ffffff;
+    
+    /* Центрирование блока */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Центрируем содержимое по вертикали */
+    align-items: center; 
+}
+.sinTR2{
+
+    width: 99%;
+    height: 100px;
+   
+    background: linear-gradient(to bottom left,#175B91, #114268);
+    clip-path: polygon(0 0, 100% 0%, 0 100%, 0% 100%);
+}
+.fotox img {
+    margin-top: 3%;
+    padding-left: 15%;
+    width: 75%;
+}
+.zxc {
+    margin-top: 20%;
+    margin-left: 16%;
+    /* Здесь можно добавить свой стили для блока zxc */
+}
+
+.krutoefoto, .krutoefoto2 {
+    position: relative;
+    width: 50%;
+    height: 200px; 
+}
+
+.krutoefoto img, .krutoefoto2 img {
+    width: 150%;
+    position: absolute;
+
+}
+
+.krutoefoto {
+    margin-left: 10%;
+}
+.krutoefoto2 {
+    margin-top: -10%;
+    z-index: 1; /* делает изображение 66 поверх 67 */
+}
+.sinTR3 {
+    margin-left: 1%;
+    width: 89%;
+    height: 100px;
+    background: linear-gradient(to bottom left, #114268, #175B91);
+    clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+    position: relative; /* Для контекста позиционирования */
+    margin-top: -20%; /* Отрицательное значение, чтобы элемент залез под фото */
+}
+.sinBlock3{
+    white-space: pre-wrap;
+    font-size: 30px; /* Увеличиваем размер текста */
+    text-align: left; /* Текст будет начинаться слева */
+    height: 300px;
+    width: 90%;
+    border-radius: 10px 0 0 10px;
+    background-color: #2276B8;
+    color: #ffffff;
+    
+    /* Центрирование блока */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Центрируем содержимое по вертикали */
+    align-items: center; 
+}
+.opt {
+    margin-top: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Выравнивает все элементы внутри блока opt по правому краю */
+    justify-content: flex-start; /* Оставляет элементы в обычном порядке сверху вниз */
+    text-align: right; /* Для выравнивания текста внутри блоков вправо */
+}
+.nije{
+    margin-top: 20%;
+}
+.grentext{
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+    color: #A1C64D;
+}
+.serBlock {
+    background-color: black;
+    opacity: 0.6;
+    color: white;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 1.8rem;
+    height: 35%;
+    padding: 0.3% 0.3%; /* Уменьшите отступы сверху и снизу, оставив отступы слева и справа */
+    border-radius: 15px;
+    white-space: pre-wrap;  
+}
+
+
+.razmet{
+    display: flex;
+    gap: 2%;
+    margin-left: 11%;
+}
+.greenraz {
+    display: flex;
+    justify-content: center;
+    width: 20%;
+    box-shadow: 5px 5px 10px green; /* Зелёная тень снизу и справа */
+}
+
+.sinraz {
+    display: flex;
+    justify-content: center;
+    width: 30%;
+    box-shadow: 5px 5px 10px blue; /* Синяя тень снизу и справа */
+}
