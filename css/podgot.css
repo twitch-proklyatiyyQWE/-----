@@ -116,7 +116,7 @@ ul li a {
     background-color: white;
 }
 footer {
-    margin-top: 100%;
+    margin-top: 140%;
     display: grid;
     grid-template-columns: 50% 50%; 
     color: #7D7D7D;
@@ -157,7 +157,7 @@ footer {
     display: flex;
     margin-left: 10%;
     font-size: 3rem;
-    color:#0868B7; 
+    color:#2276B8; 
 }
 .ohoho{
     font-size: 1.7rem;
@@ -174,4 +174,101 @@ footer {
 }
 .ohoho ul li {
     margin: 5px 0; 
+}
+.te{
+    display: flex;
+    font-size: 3rem;
+    justify-content: center;
+    color: #2276B8;
+
+}
+.garant2{
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    text-align: center ;
+    font-size: 2rem;
+}
+
+.QWE {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-size: 1.8rem; /* Увеличиваем размер шрифта */
+}
+.per{
+    z-index: 2;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+    width: 30%;
+    height: 500px;
+    background: linear-gradient(to bottom, #e0e3e6, #175B91);
+    background-color: #21222211;
+    background-repeat: no-repeat; 
+    background-size:cover;
+    background-image: url('../img/what.png');
+}
+.vtor{
+    z-index: 2;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+    width: 30%;
+    height: 650px;
+    background-color: #21222211;
+    background-repeat: no-repeat; 
+    background-size:cover;
+    background-image: url('../img/newhat.png');
+}
+.tret{
+    z-index: 2;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+    width: 30%;
+    height: 650px;
+    background-color: #21222211;
+    background-repeat: no-repeat; 
+    background-size:cover;
+    background-image: url('../img/newhat.png');
+}
+.nescafe{
+    width: 80%;
+    height: 100%;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.zad{
+    position: absolute;
+    z-index: 1;
+    margin-top: -1%;
+    margin-left: -2%;
+}
+.pered{
+    position: absolute;
+    z-index: 3;
+    margin-top: -1%;
+    margin-left: -1%;
+}
+.zad1{
+    position: absolute;
+    z-index: 1;
+    margin-top: -1%;
+    margin-left: 26%;
+}
+.pered1{
+    position: absolute;
+    z-index: 3;
+    margin-top: -1%;
+    margin-left: 27%;
+}
+.zad2{
+    position: absolute;
+    z-index: 1;
+    margin-top: -1%;
+    margin-left: 54%;
+}
+.pered2{
+    position: absolute;
+    z-index: 3;
+    margin-top: -1%;
+    margin-left: 55%;
 }
