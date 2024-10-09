@@ -280,17 +280,23 @@ footer {
 .blya {
     width: 55%;
     margin-left: 10%;
-    height: 60%;
-    
+    height: 70%;
+    background-color: #21222211;
+    background-repeat: no-repeat; 
+    background-size:cover;
+    background-image: url('../img/za.png');
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 .pizdec {
     width: 35%;
-    height: 60%;
+    height: 70%;
     margin-right: 10%;
     margin-left: 5%;
-   
+    background-color: #21222211;
+    background-repeat: no-repeat; 
+    background-size:cover;
+    background-image: url('../img/protiv.png');
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
 }
 
