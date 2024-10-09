@@ -82,7 +82,7 @@ ul li a {
     background-color: white;
 }
 footer {
-    margin-top: 55%;
+    margin-top: 70%;
     display: grid;
     grid-template-columns: 50% 50%; 
     color: #7D7D7D;
@@ -110,9 +110,8 @@ footer {
     color: #E0E0E0; 
 }
 
-.content {
-    background-color: white; 
-    margin-top: 80vh; 
+.content{
+    margin-top: 50%;
 }
 
 .vverh {
@@ -136,8 +135,8 @@ footer {
 .uslugi {
     display: flex;
     justify-content: space-between; 
-    margin-left: 10%;
-    margin-right: 10%; 
+    margin-left: 15%;
+    margin-right: 15%; 
 }
 
 .fotki {
@@ -148,9 +147,13 @@ footer {
     position: relative;
     margin-bottom: 15px;
 }
+#qwe {
+    height: 225px; /* Задайте фиксированную высоту в пикселях или других единицах */
+    width: auto; /* Автоматическая ширина, чтобы сохранить пропорции */
+}
 
 .fotki img {
-    width: 100%;
+    width: 80%;
     height: auto; 
 }
 
@@ -167,12 +170,14 @@ footer {
     margin-top: 15px;
     text-align: center;
     width: 100%;
+    font-size: 1.5rem;
 }
 
 .textusl {
+    margin-top: 7%;
     display: flex;
     justify-content: center;
-    font-size: 2em;
+    font-size: 2.5rem;
     font-weight: bold; 
     color: #2276B8;
 }
@@ -192,9 +197,11 @@ footer {
     position: relative;
     margin-bottom: 15px; 
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
-    width: 100%;
-    max-width: 300px; 
+    width: 23.5%;
     overflow: hidden;
+    height: 450px;
+    font-weight: bold;
+    font-size: 1.5rem;
     background-color: white;
 }
 
@@ -234,7 +241,7 @@ footer {
 }
 
 .card p {
-    margin-top: 10px;
+    margin-top: 100px;
     margin-bottom: 10px;
     text-align: center;
     width: 100%;
