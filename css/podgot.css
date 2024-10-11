@@ -71,14 +71,14 @@ header {
     font-size: 20px;
     margin-left: -25px;
     color: white;
-    justify-content: flex-end; /* Номера телефонов справа */
+    justify-content: flex-end; 
 }
 
 ul {
    
     list-style: none;
     display: flex;
-    gap: 20px; /* Добавить расстояние между элементами меню */
+    gap: 20px; 
 }
 
 ul li a {
@@ -153,7 +153,7 @@ footer {
     color: #E0E0E0; 
 }
 .pravo p {
-    margin-bottom: 1px; /* Например, 5 пикселей отступа */
+    margin-bottom: 1px; 
   }
 .pust{
     padding-top: 5%;
@@ -206,7 +206,7 @@ footer {
     display: flex;
     justify-content: center;
     width: 100%;
-    font-size: 1.8rem; /* Увеличиваем размер шрифта */
+    font-size: 1.8rem;
 }
 .per{
     z-index: 2;

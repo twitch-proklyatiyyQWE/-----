@@ -34,18 +34,16 @@ body::after {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(24, 24, 24, 0.5); /* Полупрозрачный цвет */
-    z-index: -1; /* Цветной слой между изображением и содержимым страницы */
+    background-color: rgba(24, 24, 24, 0.5); 
+    z-index: -1; 
     pointer-events: none;
 }
 header {
     width: 100%;
     display: grid;
     grid-template-columns: 30% 40% 30%; 
-    /* Равномерное распределение на три колонки */
 }
 
-/* Все три элемента в сетке: логотип, навигация и телефоны */
 .izob, .nnn, .nom {
     display: flex;
     align-items: center;
@@ -55,7 +53,7 @@ header {
 }
 
 .izob {
-    justify-content: flex-start; /* Логотип слева */
+    justify-content: flex-start; 
 }
 
 .nnn {
@@ -63,7 +61,7 @@ header {
     flex-direction: column;
     justify-content: center; 
     font-size: 20px;
-     /* Навигация по центру */
+     
 }
 
 .nom {
@@ -71,14 +69,14 @@ header {
     font-size: 20px;
     margin-left: -25px;
     color: white;
-    justify-content: flex-end; /* Номера телефонов справа */
+    justify-content: flex-end; 
 }
 
 ul {
    
     list-style: none;
     display: flex;
-    gap: 20px; /* Добавить расстояние между элементами меню */
+    gap: 20px; 
 }
 
 ul li a {
@@ -133,7 +131,7 @@ footer {
 .levo{
     display: flex;
     flex-direction: column;
-    align-items: center; /* Центрирование по горизонтали */
+    align-items: center; 
     justify-content: center; 
 }
 .levo img{
@@ -142,7 +140,7 @@ footer {
 .pravo{
     display: flex;
     flex-direction: column;
-    align-items: center; /* Центрирование по горизонтали */
+    align-items: center; 
     justify-content: center; 
 
 }
@@ -154,7 +152,7 @@ footer {
 }
 
 .pravo p {
-    margin-bottom: 1px; /* Например, 5 пикселей отступа */
+    margin-bottom: 1px; 
   }
 .razdel{
     padding-top: 5%;
@@ -169,35 +167,34 @@ footer {
 }
 .pravaya {
     display: flex;
-    margin-top: -10%; /* Отрицательный отступ для корректировки положения */
+    margin-top: -10%; 
     align-items: center;
     justify-content: center;
     width: 100%;
-    position: relative; /* Для использования псевдоэлемента */
+    position: relative; 
 }
 
 .pravaya img {
     padding-left: 10%;
-    width: 60%; /* Уменьшен размер изображения */
+    width: 60%; 
     margin-right: 5%;
     position: relative;
     border-radius: 15px 15px 15px 15px;
-    z-index: 2; /* Изображение выше тени */
+    z-index: 2; 
 }
 
-/* Псевдоэлемент ::after для создания тени */
 .pravaya::after {
     content: '';
     position: absolute;
     filter: blur(10px);
-    bottom: 106px; /* Позиционирование тени чуть ниже изображения */
-    left: 37%; /* Положение тени по горизонтали */
-    width: 60%; /* Ширина тени */
-    height: 120px; /* Увеличенная высота тени для более мягкого эффекта */
-    background-color: rgba(0, 0, 0, 0.2); /* Сделаем тень еще более прозрачной */
-    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%); /* Треугольная форма тени */
-    filter: blur(20px); /* Увеличиваем размытие тени */
-    z-index: 1; /* Тень под изображением */
+    bottom: 106px; 
+    left: 37%; 
+    width: 60%; 
+    height: 120px;
+    background-color: rgba(0, 0, 0, 0.2); 
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%); 
+    filter: blur(20px); 
+    z-index: 1; 
 }
 
 
@@ -206,17 +203,15 @@ footer {
     font-family: 'Inter', sans-serif; 
     font-size: 1.7rem; 
     text-align: left; 
-    letter-spacing: 2px; /* Увеличиваем размер текста */
-    /* Текст будет начинаться слева */
+    letter-spacing: 2px; 
     height: 700px;
     border-radius: 0 10px 10px 0;
     background-color: #2276B8;
     color: #ffffff;
     
-    /* Центрирование блока */
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Центрируем содержимое по вертикали */
+    justify-content: center;
     align-items: center; 
 }
 .sinTR{
@@ -263,7 +258,7 @@ textarea {
     padding-left: 4%; 
     border: 2px solid #2276B8; 
     width: 100%; 
-    box-shadow: 10px 10px  #2276B8; /*тут если что заполнить */
+    box-shadow: 10px 10px  #2276B8;
     resize: none; 
     height: 100%; 
     display: flex; 
@@ -297,7 +292,7 @@ textarea {
     padding-left: 4%; 
     border: 2px solid #2276B8; 
     width: 100%; 
-    box-shadow: 10px 10px  #2276B8; /*тут если что заполнить */
+    box-shadow: 10px 10px  #2276B8; 
     resize: none; 
     height: 100%; 
     display: flex; 
@@ -305,15 +300,15 @@ textarea {
 }
 .button input[type="submit"] {
     width: 100%; 
-    color: white;/* Заполняем всю ширину */
-    height: 100%; /* Заполняем всю высоту */
-    background: none; /* Убираем стандартный фон */
-    border: none; /* Убираем стандартную рамку */
-    font-size: inherit; /* Наследуем размер шрифта от родителя */
-    padding: 0; /* Убираем отступ */
-    cursor: pointer; /* Изменяем курсор на указатель */
-    text-align: center; /* Выравниваем текст по центру */
-    display: flex; /* Включаем flexbox */
-    align-items: center; /* Выравниваем текст по вертикали */
-    justify-content: center; /* Выравниваем текст по горизонтали */
+    color: white;
+    height: 100%; 
+    background: none;
+    border: none;
+    font-size: inherit; 
+    padding: 0; 
+    cursor: pointer; 
+    text-align: center;
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
 }
