@@ -1,4 +1,6 @@
 html, body {
+    font-family: 'Inter', sans-serif; 
+
     margin: 0;
     padding: 0;
     height: 100%;
@@ -69,6 +71,7 @@ header {
     margin-right: 20%;
     font-size: 20px;
     color: white;
+    margin-left: -25px;
     justify-content: flex-end; /* Номера телефонов справа */
 }
 
@@ -90,6 +93,12 @@ ul li a {
     display: grid;
     grid-template-columns: 30% 40% 30%; 
 }
+.sad{
+    width: 100%;
+    height: 15%;
+    display: grid;
+    grid-template-columns: 30% 40% 30%; 
+}
 .left, .center, .right{
     display: flex;
     align-items: center;
@@ -101,6 +110,8 @@ ul li a {
     clip-path: polygon(0% 0%, 75% 0%, 93% 90%, 95% 96%, 96% 98%, 97% 99%, 100% 100%, 0% 100%);
 }
 .center{
+    font-family: 'Inter', sans-serif; 
+    font-weight: 700;
     color: white;
     font-size: 40px;
     text-align: center;
@@ -111,18 +122,9 @@ ul li a {
     clip-path: polygon(100% 100%, 100% 0%, 25% 0%, 7% 90%, 5% 96%, 4% 98%, 3% 99%, 0% 100%);
 }
 
-.center{
-    color: white;
-    font-size: 40px;
-    text-align: center;
-    justify-content: center;
-}
-.right{
-    background-color: #ffffff;
-    clip-path: polygon(25% 0, 100% 0, 100% 100%, 0% 100%);
-}
 
 .realFone{
+    margin-top: -0.1%;
     width: 100%;
     height: 100%;
     background-color: white;
@@ -151,7 +153,13 @@ footer {
     justify-content: center; 
 
 }
+.pravo p {
+    margin-bottom: 1px; /* Например, 5 пикселей отступа */
+  }
+  
 #nomer {
+    font-family: 'Inter', sans-serif; 
+    font-weight: 700;
     font-size: 2rem;
     color: #E0E0E0; 
 }
@@ -176,7 +184,7 @@ footer {
     white-space: pre-wrap;
     font-size: 2rem; /* Увеличиваем размер текста */
     text-align: left; /* Текст будет начинаться слева */
-    height: 40%;
+    height: 22%;
     width: 95%;
     border-radius: 0 10px 10px 0;
     background-color: #2276B8;
@@ -192,7 +200,7 @@ footer {
 
 .sinTR {
     width: 94%;
-    height: 400px;
+    height: 300px;
     background: linear-gradient(to bottom left, #175B91, #114268);
     clip-path: polygon(0 0, 100% 0%, 0 100%, 0% 100%);
     position: relative;
@@ -204,7 +212,7 @@ footer {
     margin-left: 10%;
     margin-right: 10%;
     position: relative;
-    top: -1%;
+    top: -3%;
     gap: 10%; /* Добавляем отступ между изображениями */
 }
 

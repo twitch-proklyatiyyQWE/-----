@@ -1,4 +1,6 @@
 html, body {
+    font-family: 'Inter', sans-serif; 
+
     margin: 0;
     padding: 0;
     height: 100%;
@@ -69,6 +71,7 @@ header {
     margin-right: 20%;
     font-size: 20px;
     color: white;
+    margin-left: -25px;
     justify-content: flex-end; /* Номера телефонов справа */
 }
 
@@ -101,6 +104,8 @@ ul li a {
     clip-path: polygon(0% 0%, 75% 0%, 93% 90%, 95% 96%, 96% 98%, 97% 99%, 100% 100%, 0% 100%);
 }
 .center{
+    font-family: 'Inter', sans-serif; 
+    font-weight: 700;
     color: white;
     font-size: 40px;
     text-align: center;
@@ -112,6 +117,7 @@ ul li a {
 }
 
 .realFone{
+    margin-top: -0.1%;
     width: 100%;
     height: 100%;
     background-color: white;
@@ -141,13 +147,19 @@ footer {
 
 }
 #nomer {
+    font-family: 'Inter', sans-serif; 
+    font-weight: 700;
     font-size: 2rem;
     color: #E0E0E0; 
 }
+.pravo p {
+    margin-bottom: 1px; /* Например, 5 пикселей отступа */
+  }
 .pust{
     padding-top: 5%;
  }
 .block{
+    font-family: 'Inter', sans-serif; 
     padding: 1%;
     display: flex;
     justify-content: center;
@@ -156,15 +168,37 @@ footer {
     margin-right: 10%;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
 }
+@font-face {
+    font-family: 'Inter';
+    src: url('fonts/Inter-Regular.ttf') format('truetype'),
+         url('fonts/Inter-Regular.woff') format('woff'),
+         url('fonts/Inter-Regular.otf') format('opentype'); 
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Inter';
+    src: url('fonts/Inter-Bold.ttf') format('truetype'),
+         url('fonts/Inter-Bold.woff') format('woff'),
+         url('fonts/Inter-Bold.otf') format('opentype'); 
+    font-weight: 700;
+    font-style: normal;
+  }
 .text{
-    margin-top: 4%;
-    font-size: 3.4rem;
+    font-family: 'Inter', sans-serif; 
+    
+    margin-top: 6%;
+    font-size: 2.3rem;
+    font-weight: 600;
     display: flex;
     color: #2276B8;
     margin-left: 10%;
 }
 .text1{
-    margin-top: 4%;
+    font-family: 'Inter', sans-serif; 
+    font-weight: 700;
+    margin-top: 6%;
     font-size: 3rem;
     display: flex;
     justify-content: center;
@@ -248,14 +282,15 @@ footer {
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
 }
 #gl{
-    font-weight: bold;
+    font-family: 'Inter', sans-serif; 
+    font-weight: 700;
     font-size: 1.7rem;
 }
 .asd{
     display: flex;
     margin-left: 10%;
     margin-right: 10%;
-    font-size: 2.1rem;
+    font-size: 1.73rem;
     margin-top: 3%;
 }
 .niz{

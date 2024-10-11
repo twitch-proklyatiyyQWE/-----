@@ -1,4 +1,5 @@
 html, body {
+    font-family: 'Inter', sans-serif; 
     margin: 0;
     padding: 0;
     height: 100%;
@@ -68,6 +69,7 @@ header {
 .nom {
     margin-right: 20%;
     font-size: 20px;
+    margin-left: -25px;
     color: white;
     justify-content: flex-end; /* Номера телефонов справа */
 }
@@ -101,6 +103,8 @@ ul li a {
     clip-path: polygon(0% 0%, 75% 0%, 93% 90%, 95% 96%, 96% 98%, 97% 99%, 100% 100%, 0% 100%);
 }
 .center{
+    font-family: 'Inter', sans-serif; 
+    font-weight: 700;
     color: white;
     font-size: 40px;
     text-align: center;
@@ -113,12 +117,13 @@ ul li a {
 
 
 .realFone{
+    margin-top: -0.1%;
     width: 100%;
     height: 100%;
     background-color: white;
 }
 footer {
-    margin-top: 20%;
+    margin-top: 70%;
     display: grid;
     grid-template-columns: 50% 50%; 
     color: #7D7D7D;
@@ -142,12 +147,15 @@ footer {
 
 }
 #nomer {
+    font-family: 'Inter', sans-serif; 
+    font-weight: 700;
     font-size: 2rem;
     color: #E0E0E0; 
 }
 
-
-
+.pravo p {
+    margin-bottom: 1px; /* Например, 5 пикселей отступа */
+  }
 .razdel{
     padding-top: 5%;
     width: 100%;
@@ -195,9 +203,11 @@ footer {
 
 
 .sinBlock{
-    white-space: pre-wrap;
-    font-size: 24px; /* Увеличиваем размер текста */
-    text-align: left; /* Текст будет начинаться слева */
+    font-family: 'Inter', sans-serif; 
+    font-size: 1.7rem; 
+    text-align: left; 
+    letter-spacing: 2px; /* Увеличиваем размер текста */
+    /* Текст будет начинаться слева */
     height: 700px;
     border-radius: 0 10px 10px 0;
     background-color: #2276B8;
@@ -216,4 +226,94 @@ footer {
    
     background: linear-gradient(to bottom left,#175B91, #114268);
     clip-path: polygon(0 0, 100% 0%, 0 100%, 0% 100%);
+}
+.otpr {
+    font-weight: bold;
+   
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+    color: #2276B8;
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.479); 
+    height: 50%;
+    font-size: 2rem;
+    padding-bottom: 10%;
+}
+
+.marla {
+    padding-left: 10%;
+    padding-right: 10%;
+    display: flex;
+    justify-content: space-between; 
+}
+.idk{
+    padding-left: 10%;
+}
+.posd {
+    padding-left: 10%;
+    padding-right: 11%;
+    height:150px; 
+    margin-top: 5%; 
+}
+
+textarea { 
+    
+    font-size: 1.5rem;
+    padding-left: 4%; 
+    border: 2px solid #2276B8; 
+    width: 100%; 
+    box-shadow: 10px 10px  #2276B8; /*тут если что заполнить */
+    resize: none; 
+    height: 100%; 
+    display: flex; 
+    align-items: center; 
+}
+.qqq {
+    width: 45%;
+} 
+.tr{
+    position: absolute;
+    margin-left: 80%;
+    margin-top: 3.1%;
+    width: 3.03%;
+    height: 4%;
+    background-color: #114268;
+    clip-path: polygon(0 0, 0% 100%, 100% 100%);
+}
+.button{
+    position: absolute;
+    margin-left: 50%;
+    margin-top: 5%;
+    width: 33.001%;
+    height: 7%;
+    background-color: #2276B8 ;
+}
+.pust{
+    padding-top: 5%;
+}
+#jj{
+    font-size: 1.5rem;
+    padding-left: 4%; 
+    border: 2px solid #2276B8; 
+    width: 100%; 
+    box-shadow: 10px 10px  #2276B8; /*тут если что заполнить */
+    resize: none; 
+    height: 100%; 
+    display: flex; 
+    align-items: center; 
+}
+.button input[type="submit"] {
+    width: 100%; 
+    color: white;/* Заполняем всю ширину */
+    height: 100%; /* Заполняем всю высоту */
+    background: none; /* Убираем стандартный фон */
+    border: none; /* Убираем стандартную рамку */
+    font-size: inherit; /* Наследуем размер шрифта от родителя */
+    padding: 0; /* Убираем отступ */
+    cursor: pointer; /* Изменяем курсор на указатель */
+    text-align: center; /* Выравниваем текст по центру */
+    display: flex; /* Включаем flexbox */
+    align-items: center; /* Выравниваем текст по вертикали */
+    justify-content: center; /* Выравниваем текст по горизонтали */
 }

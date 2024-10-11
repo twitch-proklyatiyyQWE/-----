@@ -1,4 +1,6 @@
 html, body {
+    font-family: 'Inter', sans-serif; 
+
     margin: 0;
     padding: 0;
     height: 100%;
@@ -68,6 +70,7 @@ header {
 .nom {
     margin-right: 20%;
     font-size: 20px;
+    margin-left: -25px;
     color: white;
     justify-content: flex-end; /* Номера телефонов справа */
 }
@@ -101,6 +104,8 @@ ul li a {
     clip-path: polygon(0% 0%, 75% 0%, 93% 90%, 95% 96%, 96% 98%, 97% 99%, 100% 100%, 0% 100%);
 }
 .center{
+    font-family: 'Inter', sans-serif; 
+    font-weight: 700;
     color: white;
     font-size: 40px;
     text-align: center;
@@ -113,6 +118,7 @@ ul li a {
 
 
 .realFone{
+    margin-top: 1%;
     width: 100%;
     height: 100%;
     background-color: white;
@@ -142,9 +148,14 @@ footer {
 
 }
 #nomer {
+    font-family: 'Inter', sans-serif; 
+    font-weight: 700;
     font-size: 2rem;
     color: #E0E0E0; 
 }
+.pravo p {
+    margin-bottom: 1px; /* Например, 5 пикселей отступа */
+  }
 .razdelili{
     display: grid;
     grid-template-columns: 50% 50%; 
@@ -193,20 +204,34 @@ footer {
 .tex{
     margin-left: 7%;
 }
+.znachki {
+    margin-top: 8%;
+    margin-left: 12%;
+    position: absolute;
+    display: flex;
+    flex-direction: column; 
+    gap: 45px; 
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+}
+
+
 .sinBlock2{
+    letter-spacing: 2px;
     margin-top: 10%;
     white-space: pre-wrap;
-    font-size: 1.5rem; /* Увеличиваем размер текста */
-    text-align: left; /* Текст будет начинаться слева */
-    height: 35%;
+    font-size: 1.7rem; 
+    text-align: left; 
+    height: 22%;
     border-radius: 0 10px 10px 0;
     background-color: #2276B8;
     color: #ffffff;
-    
-    /* Центрирование блока */
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Центрируем содержимое по вертикали */
+    justify-content: center; 
     align-items: center; 
 }
 .sinTR2{
@@ -239,32 +264,43 @@ footer {
     position: absolute;
 
 }
-
+.vvv{
+    position: absolute;
+    margin-top: 18%;
+    margin-left: 7%;
+}
 .krutoefoto {
     margin-left: 10%;
+    
 }
 .krutoefoto2 {
-    margin-top: -10%;
+    margin-top: -15%;
     z-index: 1; /* делает изображение 66 поверх 67 */
 }
 .sinTR3 {
     margin-left: 1%;
     width: 89%;
     height: 100px;
+    margin-top: -35%;
     background: linear-gradient(to bottom left, #114268, #175B91);
     clip-path: polygon(100% 0, 0% 100%, 100% 100%);
     position: relative; /* Для контекста позиционирования */
-    margin-top: -20%; /* Отрицательное значение, чтобы элемент залез под фото */
 }
-.sinBlock3{
-    white-space: pre-wrap;
-    font-size: 30px; /* Увеличиваем размер текста */
+.sinBlock3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+     /* Увеличиваем размер текста */
     text-align: left; /* Текст будет начинаться слева */
     height: 300px;
     width: 90%;
+    
     border-radius: 10px 0 0 10px;
     background-color: #2276B8;
     color: #ffffff;
+
+    /* Добавляем отступы */
     
     /* Центрирование блока */
     display: flex;
@@ -272,6 +308,12 @@ footer {
     justify-content: center; /* Центрируем содержимое по вертикали */
     align-items: center; 
 }
+.gg{
+    font-size: 1.7rem;
+   padding-left: 10%;
+   padding-right: 15%;
+}
+
 .opt {
     margin-top: 90%;
     display: flex;
@@ -281,7 +323,7 @@ footer {
     text-align: right; /* Для выравнивания текста внутри блоков вправо */
 }
 .nije{
-    margin-top: 20%;
+    margin-top: 10%;
 }
 .grentext{
     display: flex;

@@ -1,4 +1,6 @@
 html, body {
+    font-family: 'Inter', sans-serif; 
+
     margin: 0;
     padding: 0;
     height: 100%;
@@ -67,6 +69,7 @@ header {
 .nom {
     margin-right: 20%;
     font-size: 20px;
+    margin-left: -25px;
     color: white;
     justify-content: flex-end; /* Номера телефонов справа */
 }
@@ -100,6 +103,8 @@ ul li a {
     clip-path: polygon(0% 0%, 75% 0%, 93% 90%, 95% 96%, 96% 98%, 97% 99%, 100% 100%, 0% 100%);
 }
 .center{
+    font-family: 'Inter', sans-serif; 
+    font-weight: 700;
     color: white;
     font-size: 40px;
     text-align: center;
@@ -112,6 +117,7 @@ ul li a {
 
 
 .realFone{
+    margin-top: -0.1%;
     width: 100%;
     height: 100%;
     background-color: white;
@@ -141,9 +147,14 @@ footer {
 
 }
 #nomer {
+    font-family: 'Inter', sans-serif; 
+    font-weight: 700;
     font-size: 2rem;
     color: #E0E0E0; 
 }
+.pravo p {
+    margin-bottom: 1px; /* Например, 5 пикселей отступа */
+  }
 .pust{
     padding-top: 5%;
  }
@@ -199,34 +210,27 @@ footer {
 }
 .per{
     z-index: 2;
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
-    width: 30%;
-    height: 500px;
-    background: linear-gradient(to bottom, #e0e3e6, #175B91);
-    background-color: #21222211;
+    width: 31%;
+    height: 600px;
     background-repeat: no-repeat; 
     background-size:cover;
-    background-image: url('../img/what.png');
+    background-image: url('../img/ggg.png');
 }
 .vtor{
     z-index: 2;
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
-    width: 30%;
-    height: 650px;
-    background-color: #21222211;
+    width: 31%;
+    height: 700px;
     background-repeat: no-repeat; 
     background-size:cover;
-    background-image: url('../img/newhat.png');
+    background-image: url('../img/razum.png');
 }
 .tret{
     z-index: 2;
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
-    width: 30%;
-    height: 650px;
-    background-color: #21222211;
+    width: 31%;
+    height: 700px;
     background-repeat: no-repeat; 
     background-size:cover;
-    background-image: url('../img/newhat.png');
+    background-image: url('../img/razum.png');
 }
 .nescafe{
     width: 80%;
