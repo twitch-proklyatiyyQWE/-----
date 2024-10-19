@@ -311,27 +311,3 @@ footer {
     margin-top: 11%;
     margin-left: 84.5%;
 }
-.rofl{
-    border-radius: 10px;
-    display: flex;  
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: 3%;
-    box-shadow: 5px 5px 10px #2276B8;
-}
-.rofl1{
-    border-radius: 10px;
-    display: flex;  
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: 3%;
-    box-shadow: 5px 5px 10px #2276B8;
- }
-.rofl1 img, .rofl img{
-    border-radius: 10px;
-
-}
-.upad{
-    font-size: 1.7rem;
-    margin: 5%;
-}
