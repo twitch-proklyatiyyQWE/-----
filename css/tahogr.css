@@ -127,6 +127,7 @@ ul li a {
     background-color: white;
 }
 footer {
+    justify-content: flex-end;
     margin-top: 20%;
     display: grid;
     grid-template-columns: 50% 50%; 

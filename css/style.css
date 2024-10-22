@@ -126,6 +126,7 @@ header{
 }
 
 footer{
+    justify-content: flex-end;
     background-color: black;
     width: auto;
     height: 10%;

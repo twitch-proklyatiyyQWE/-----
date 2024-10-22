@@ -83,6 +83,7 @@ ul li a {
     background-color: white;
 }
 footer {
+    justify-content: flex-end;
     z-index: 2;
     margin-top: 85%;
     display: grid;
