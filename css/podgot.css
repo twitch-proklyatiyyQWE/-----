@@ -124,6 +124,7 @@ ul li a {
 }
 footer {
     justify-content: flex-end;
+    
     margin-top: 125%;
     display: grid;
     grid-template-columns: 50% 50%; 
