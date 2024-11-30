@@ -1,0 +1,153 @@
+html, body {
+    font-family: 'Inter', sans-serif; 
+
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto; 
+}
+
+body {
+    position: relative;
+}
+
+body::before {
+    content: ""; 
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/redTruck.png'); 
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+    background-size:100% 35%; 
+    opacity: 0.7; 
+    filter: blur(10px);
+    z-index: -1; 
+    pointer-events: none; 
+}
+body::after {
+    content: ""; 
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(24, 24, 24, 0.5); 
+    z-index: -1; 
+    pointer-events: none;
+}
+header {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 30% 40% 30%; 
+}
+
+.izob, .nnn, .nom {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    
+}
+
+.izob {
+    justify-content: flex-start;
+}
+
+.nnn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    font-size: 20px;
+}
+
+.nom {
+    margin-right: 20%;
+    font-size: 20px;
+    margin-left: -25px;
+    color: white;
+    justify-content: flex-end;
+}
+
+ul {
+   
+    list-style: none;
+    display: flex;
+    gap: 20px; 
+}
+
+ul li a {
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}
+.sad{
+    width: 100%;
+    height: 15%;
+    display: grid;
+    grid-template-columns: 30% 40% 30%; 
+}
+.left, .center, .right{
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+}
+.left{
+    background-color: #ffffff;
+    clip-path: polygon(0% 0%, 75% 0%, 93% 90%, 95% 96%, 96% 98%, 97% 99%, 100% 100%, 0% 100%);
+}
+.center{
+    font-family: 'Inter', sans-serif; 
+    font-weight: 700;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    justify-content: center;
+}
+.right{
+    background-color: #ffffff;
+    clip-path: polygon(100% 100%, 100% 0%, 25% 0%, 7% 90%, 5% 96%, 4% 98%, 3% 99%, 0% 100%);
+}
+
+.realFone{
+    margin-top: -0.1%;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+footer {
+    justify-content: flex-end;
+    display: grid;
+    grid-template-columns: 50% 50%; 
+    color: #7D7D7D;
+    background-color: #2B2B2B;
+   
+}
+.levo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+}
+.levo img{
+    width: 15%;
+}
+.pravo{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+
+}
+#nomer {
+    font-family: 'Inter', sans-serif; 
+    font-weight: 700;
+    font-size: 2rem;
+    color: #E0E0E0; 
+}
+.pravo p {
+    margin-bottom: 1px; 
+  }

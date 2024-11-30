@@ -1,0 +1,245 @@
+html, body {
+    font-family: 'Inter', sans-serif; 
+
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto; 
+}
+
+body {
+    position: relative;
+    display: grid;
+}
+
+body::before {
+    content: ""; 
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/redTruck.png'); 
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+    background-size:100% 35%; 
+    opacity: 0.7; 
+    filter: blur(10px);
+    z-index: -1; 
+    pointer-events: none; 
+}
+body::after {
+    content: ""; 
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(24, 24, 24, 0.5); 
+    
+    z-index: -1; 
+    pointer-events: none;
+}
+header {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 30% 40% 30%; 
+   
+}
+
+.izob, .nnn, .nom {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    
+}
+
+.izob {
+    justify-content: flex-start; 
+}
+
+.nnn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    font-size: 20px;
+   
+}
+
+.nom {
+    margin-right: 20%;
+    font-size: 20px;
+    margin-left: -25px;
+    color: white;
+    justify-content: flex-end; 
+}
+
+ul {
+   
+    list-style: none;
+    display: flex;
+    gap: 20px; 
+}
+
+ul li a {
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}
+.sad{
+    width: 100%;
+    height: 15%;
+    display: grid;
+    grid-template-columns: 30% 40% 30%; 
+}
+.left, .center, .right{
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+}
+.left{
+    background-color: #ffffff;
+    clip-path: polygon(0% 0%, 75% 0%, 93% 90%, 95% 96%, 96% 98%, 97% 99%, 100% 100%, 0% 100%);
+}
+.center{
+    font-family: 'Inter', sans-serif; 
+    font-weight: 700;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    justify-content: center;
+}
+.right{
+    background-color: #ffffff;
+    clip-path: polygon(100% 100%, 100% 0%, 25% 0%, 7% 90%, 5% 96%, 4% 98%, 3% 99%, 0% 100%);
+}
+
+
+.realFone{
+    margin-top: -0.1%;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+.levo{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+}
+.levo img{
+    width: 15%;
+}
+.pravo{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+
+}
+#nomer {
+    font-family: 'Inter', sans-serif; 
+    font-weight: 700;
+    font-size: 2rem;
+    color: #E0E0E0; 
+}
+.pravo p {
+    margin-bottom: 1px; 
+  }
+.pust{
+    padding-top: 5%;
+ }
+.bolshoy{
+    padding-bottom: 5%;
+    padding-top: 1%;
+    margin-left: 10%;
+    margin-right: 10%;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+}
+.bt{
+    display: flex;
+    margin-left: 10%;
+    font-size: 3rem;
+    color:#2276B8; 
+}
+.ohoho{
+    font-size: 1.7rem;
+    display: block;
+    width: 80%; 
+    white-space: wrap;
+    margin-left: 10%;
+}
+
+.ohoho ul{
+    list-style-type: disc;
+    display: flex;
+    flex-direction: column;
+}
+.ohoho ul li {
+    margin: 5px 0; 
+}
+.te{
+    display: flex;
+    font-size: 3rem;
+    justify-content: center;
+    color: #2276B8;
+
+}
+.garant2{
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    text-align: center ;
+    font-size: 2rem;
+}
+
+.QWE {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-size: 1.6rem;
+}
+.per{
+    z-index: 2;
+    width: 31%;
+    height: 700px;
+    background-repeat: no-repeat; 
+    background-size:cover;
+    background-image: url('../img/ggg.png');
+}
+.nescafe{
+    width: 80%;
+    height: 100%;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.zad{
+    position: absolute;
+    z-index: 1;
+    margin-top: -3%;
+    margin-left: -2%;
+}
+.pered{
+    position: absolute;
+    z-index: 3;
+    margin-top: -3%;
+    margin-left: -1%;
+}
+.te1{
+    position: absolute;
+    margin-top: -6%;
+}
+.te2{
+    position: absolute;
+    margin-top: 15%;
+    margin-left: 81.5%;
+    
+}
+.te2 img{
+    width: 120%;
+}

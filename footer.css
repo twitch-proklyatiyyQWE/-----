@@ -1,0 +1,10 @@
+footer {
+    justify-content: flex-end;
+    z-index: 2;
+    margin-top: 10%;
+    display: grid;
+    grid-template-columns: 50% 50%; 
+    color: #7D7D7D;
+    background-color: #2B2B2B;
+    width: 100%;   
+}

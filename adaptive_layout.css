@@ -1,0 +1,106 @@
+@media (max-width: 1470px) {
+    .sinBlock {
+    white-space: wrap;
+    font-size: 20px;
+    height: 100%;
+    padding-left: 5%;
+}
+.ohoho{
+    font-size: 20px;
+    display: block;
+    white-space: wrap;
+    width: 80%; 
+    margin-left: 10%;
+}
+
+.QWE {
+    display: flex;
+    justify-content: center;
+    white-space: wrap;
+    width: 100%;
+    font-size: 20px;
+}
+    
+}
+@media (max-width: 1224px) {
+    header {
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 10px;
+    }
+
+    .sinBlock {
+    white-space: wrap;
+    height: 100%;
+    font-size: 20px;
+    padding-left: 5%;
+}
+.fotokarti {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 10%;
+    margin-right: 10%;
+    position: relative;
+    top: -3%;
+    gap: 10%; 
+}
+.ohoho{
+    font-size: 20px;
+    display: block;
+    white-space: wrap;
+    width: 80%; 
+    margin-left: 10%;
+}
+
+.QWE {
+    display: flex;
+    justify-content: center;
+    white-space: wrap;
+    width: 100%;
+    font-size: 20px;
+}
+.per{
+    width: 50%;
+}
+.nescafe{
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    
+}
+}
+
+@media (max-width: 995px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nnn nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+
+
+    .prod .card, .uslugi .fotki {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    header img {
+        width: 50%;
+    }
+
+    .nom p {
+        font-size: 14px;
+    }
+
+    .textusl p, .central-text {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+}
